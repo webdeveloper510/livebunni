@@ -1,0 +1,1 @@
+[11-Sep-2017 02:49:25 America/Chicago] PHP Warning:  password_hash() expects at least 2 parameters, 1 given in /home/codenomad/public_html/secret-angels/ajax/user_registration.php on line 5

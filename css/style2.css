@@ -1,0 +1,305 @@
+body{ 
+    margin-top:40px; 
+	font-family: montserrat, arial, verdana;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    background-image: url(https://img.grouponcdn.com/iam/nmymv9TUEXPj8LX9E8YR/wt-2048x1229/v1/c700x420.jpg);
+    background-size: cover;
+    padding: 0px 17px;
+}
+
+.stepwizard-step p {
+    margin-top: 10px;
+}
+
+.stepwizard-row {
+    display: table-row;
+}
+
+.stepwizard {
+    display: table;
+    width: 64%;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 18%;
+    text-align: center;
+}
+
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 71%;
+    height: 1px;
+    background-color: #ccc;
+	 left: 107px;
+    z-order: 0;
+}
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+div#step-1 {
+    width: 65%;
+    margin: 35px auto;
+    background: #0000002e;
+}
+div#step-1 .control-label {
+    color: #fff;
+	    text-align: center;
+}
+div#step-1 input {
+    background: transparent;
+    border: 1px solid #fbf6f6;
+    color: #fff;
+}
+select.state {
+    border: 1px solid #fbf6f6;
+    color: #fff;
+    height: 36px;
+    border-radius: 5px;
+	background: transparent;
+}
+div#step-1 select.state option {
+    background: #0000006b;
+    opacity: .5;
+}
+div#step-1 select.selectpicker option {
+    background: #0000006b;
+    opacity: .5;
+}
+select#country {
+    background: transparent;
+    color: #fff;
+}
+select.selectpicker
+{
+	 border: 1px solid #fbf6f6;
+    color: #fff;
+    height: 36px;
+    border-radius: 5px;
+	background: transparent;
+}
+h2.fs-title {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #ee0979;
+       margin-bottom: 25px;
+    margin-top: 25px;
+    letter-spacing: 2px;
+    font-weight: bold;
+	    text-align: center;
+}
+div#step-1 .has-error .form-control {
+    border-color: #ec0c07 !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+div#step-2 .has-error .form-control {
+    border-color: #ec0c07 !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+div#step-2 {
+    width: 65%;
+    margin: 31px auto;
+    background: #0000002e;
+}
+div#step-2 .control-label {
+    color: #fff;
+	    text-align: center;
+}
+div#step-2 input {
+    background: transparent;
+    border: 1px solid #fbf6f6;
+    color: #fff;
+    width: 55%;
+}
+.Padded
+{    color: #fff;
+	    text-align: center;}
+div#step-2 table {
+    background-color: transparent;
+    color: #fff;
+    width: 123%;
+    position: relative;
+    line-height: 31px;
+ 
+}
+button.btn.btn-primary.nextBtn.btn-lg.pull-right {
+    margin-top: 54px;
+    width: 100px;
+    background: #ee0979;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 40px 5px;
+}
+button.btn.btn-primary.nextBtn.btn-lg.pull-right:hover, button.btn.btn-primary.nextBtn.btn-lg.pull-right:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979;
+}
+button.btn.btn-success.btn-lg.pull-right:hover, button.btn.btn-success.btn-lg.pull-right:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979;
+}
+button.btn.btn-success.btn-lg.pull-right
+{
+	    margin-top: 15px;
+	width: 100px;
+    background: #ee0979;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+textarea#comment {
+    background: transparent;
+    color: #fff;
+}
+a.btn.btn-default.btn-circle.btn-primary {
+    background: #ee0979;
+    color: white;
+    border-color: #ee0979;
+}
+.stepwizard-step p {
+    margin-top: 10px;
+    color: #fff;
+}
+div#step-3 {
+     width: 65%;
+     margin: 0 auto;
+     background: #0000002e;
+	     padding-bottom: 20px;
+}
+div#step-2 .form-group, div#step-3 .form-group {
+    margin-bottom: 15px;
+    float: left;
+    margin-top: 36px;
+    width: 100%;
+}
+div#step-3 h2.Adult_hed {
+    color: #fff;
+    font-size: 25px;
+}
+.pt5 {
+    color: #fff;
+}
+label.cbxAVSelfCert {
+    color: #fff;
+}
+p.few {
+    color: #fff;
+}
+.few {
+    color: #fff;
+}
+div#step-4 {
+     width: 65%;
+     margin: 0 auto;
+     background: #0000002e;
+}
+div#step-4 {
+    width: 65%;
+    margin: 0 auto;
+	background: #0000002e;
+	    padding-bottom: 20px;
+} 
+div#step-4 .control-label {
+    color: #fff;
+	    text-align: center;
+}
+div#step-4 input {
+    background: transparent;
+    border: 1px solid #fbf6f6;
+    color: #fff;
+}
+#sbt {
+    background: #6f6a6300 !important;
+    color: #f6f3f3 !important;
+    padding: 5px 20px !important;
+    font-size: 13px !important;
+}
+#sbt:hover
+{
+	border: 1px solid #ee0979 !important;
+}
+div#step-1 input::placeholder {
+    color: #fff;
+}
+div#step-2 input::placeholder {
+    color: #fff;
+}
+div#step-3 input::placeholder {
+    color: #fff;
+}
+div#step-4 input::placeholder {
+    color: #fff;
+}
+div#step-1 select#country option {
+    background: #0000006b;
+    opacity: .5;
+}
+.pretBtn {
+    margin-left: 17px;
+    margin-top: 40px;
+    width: 100px;
+    background: #ee0979 !important;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px !important;
+    cursor: pointer;
+    padding: 10px 13px !important;
+}
+div#step-4 .col-md-6 {
+    width: 50%;
+    margin-bottom: 10px;
+}
+input#file {
+    width: 300px;
+    color: #fff;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+input#pic {
+    margin-bottom: 10px;
+}
+div#step-4 button.btn.btn-success.btn-lg.pull-right {
+    margin-top: 40px;
+}
+.secreatlogo {
+    width: 196px;
+    height: 33PX;
+    position: absolute;
+    top: 12px;
+    left: 21px;
+}
+
+
+
+
+

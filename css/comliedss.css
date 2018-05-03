@@ -1,0 +1,114 @@
+.inline-video-preview img:not(.loading){
+    max-height:160px;
+    height:160px;
+    min-height:160px;
+    object-fit:cover;
+    width:100%
+}
+.inline-video-preview{
+    display:block;
+    position:relative;
+    overflow:hidden
+}
+.inline-video-preview-layer,.inline-video-preview-video{
+    height:100%;
+    left:0;
+    object-fit:cover;
+    position:absolute;
+    top:0;
+    width:100%;
+    z-index:1;
+    min-height:100%;
+    overflow:hidden
+}
+.inline-video-preview-video.object-fit-fallback{
+    width:auto;
+    min-width:100%;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%)
+}
+.inline-video-preview-layer{
+    align-items:end;
+    background-color:rgba(255,255,255,.01);
+    display:-webkit-flex;
+    display:flex;
+    justify-content:end;
+    padding:10px
+}
+.inline-video-preview-layer.-is-profile-video{
+    justify-content:center
+}
+
+.icon.mute.video-controls{
+    background-image:url(https://d3e1078hs60k37.cloudfront.net/site_files/images/icons/mute.svg)
+}
+.icon.unmute.video-controls{
+    background-image:url(https://d3e1078hs60k37.cloudfront.net/site_files/images/icons/unmute.svg)
+}
+.icon.pause.video-controls{
+    background-image:url(https://d3e1078hs60k37.cloudfront.net/site_files/images/icons/pause.svg)
+}
+.icon.play.video-controls{
+    background-image:url(https://d3e1078hs60k37.cloudfront.net/site_files/images/icons/play.svg)
+}.icon.small {
+    width: 1.6em;
+    height: 1.6em; 
+}
+.icon {
+    display: inline-block; 
+    background-size: contain; 
+    background-position: center; 
+    align-self: center; 
+}
+
+.icon, .mv-icon {
+   background-repeat: no-repeat;
+}
+
+.small, small {
+    font-size: 85%; 
+}
+.icon {
+    display: inline-block; 
+    background-size: contain; 
+    background-position: center; 
+    align-self: center; 
+}
+.btn, .btn-group, .btn-group-vertical, .dropdown-toggle::after, .icon {
+   vertical-align: middle;
+}
+*, ::after, ::before {
+   box-sizing: inherit;
+}
+.toggle-vid-sound, .vid-toggle-sound {
+   position: absolute;
+   background-color: rgba(0,0,0,.3);
+   border-radius: 6px;
+   padding: 5px 8px;
+   z-index: 2;
+   right: 10px;
+   bottom: 10px;
+}
+.inline-video-preview-layer {
+   align-items: end;
+   background-color: rgba(255,255,255,.01);
+   display: -webkit-flex;
+   display: flex;
+   justify-content: end;
+   padding: 10px;
+}
+.inline-video-preview-layer, .inline-video-preview-video {
+   height: 100%;
+   left: 0;
+   object-fit: cover;
+   position: absolute;
+   top: 0;
+   width: 100%;
+   z-index: 1;
+   min-height: 100%;
+   overflow: hidden;
+}
+.dropdown, .dropup {
+    position: inherit !important;
+}

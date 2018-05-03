@@ -1,0 +1,658 @@
+/*!
+ * bootstrap-star-rating v4.0.3
+ * http://plugins.krajee.com/star-rating
+ *
+ * Author: Kartik Visweswaran
+ * Copyright: 2013 - 2017, Kartik Visweswaran, Krajee.com
+ *
+ * Licensed under the BSD 3-Clause
+ * https://github.com/kartik-v/bootstrap-star-rating/blob/master/LICENSE.md
+ */
+.rating-loading {
+    width: 25px;
+    height: 25px;
+    font-size: 0;
+    color: #fff;
+    background: transparent url('../img/loading.gif') top left no-repeat;
+    border: none;
+}
+
+/*
+ * Stars & Input
+ */
+.rating-container .rating-stars {
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 4px;
+    font-size: 20px;
+}
+
+.rating-container .rating-input {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    font-size: 1px;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rating-disabled .rating-input, .rating-disabled .rating-stars {
+    cursor: not-allowed;
+}
+
+.rating-container .star {
+    display: inline-block;
+    margin: 0 3px;
+    text-align: center;
+}
+
+.rating-container .empty-stars {
+    color: #aaa;
+}
+
+.rating-container .filled-stars {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto;
+    color: #fde16d;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-text-stroke: 1px #777;
+    text-shadow: 1px 1px #999;
+}
+
+.rating-rtl {
+    float: right;
+}
+
+.rating-animate .filled-stars {
+    transition: width 0.25s ease;
+    -o-transition: width 0.25s ease;
+    -moz-transition: width 0.25s ease;
+    -webkit-transition: width 0.25s ease;
+}
+
+.rating-rtl .filled-stars {
+    left: auto;
+    right: 0;
+    -moz-transform: matrix(-1, 0, 0, 1, 0, 0) translate3d(0, 0, 0);
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0) translate3d(0, 0, 0);
+    -o-transform: matrix(-1, 0, 0, 1, 0, 0) translate3d(0, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0) translate3d(0, 0, 0);
+}
+
+.rating-rtl.is-star .filled-stars {
+    right: 0.06em;
+}
+
+.rating-rtl.is-heart .empty-stars {
+    margin-right: 0.07em;
+}
+
+/**
+ * Sizes
+ */
+.rating-xl {
+    font-size: 4.89em;
+}
+
+.rating-lg {
+    font-size: 3.91em;
+}
+
+.rating-md {
+    font-size: 3.13em;
+}
+
+.rating-sm {
+    font-size: 2.5em;
+}
+
+.rating-xs {
+    font-size: 2em;
+}
+
+.rating-xl {
+    font-size: 4.89em;
+}
+
+/**
+ * Clear
+ */
+.rating-container .clear-rating {
+    color: #aaa;
+    cursor: not-allowed;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 60%;
+}
+
+.clear-rating-active {
+    cursor: pointer !important;
+}
+
+.clear-rating-active:hover {
+    color: #843534;
+}
+
+.rating-container .clear-rating {
+    padding-right: 5px;
+}
+
+/**
+ * Caption
+ */
+
+/* extend support to BS4 */
+.rating-container .caption .label {
+    display: inline-block;
+    padding: .25em .4em;
+    line-height: 1;
+    text-align: center;
+    vertical-align: baseline;
+    border-radius: .25rem;
+}
+
+.rating-container .caption {
+    color: #999;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 60%;
+    margin-top: -0.6em;
+}
+
+.rating-container .caption {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.rating-rtl .caption {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+/**
+ * Print
+ */
+@media print {
+    .rating-container .clear-rating {
+        display: none;
+    }
+}
+
+
+
+
+/*--------modelpage-----*/
+
+/* .numberlikes {
+    margin-left: 69px;
+    font-weight: bold;
+    font-size: 12px;
+    position: absolute;
+    margin-top: -25px;
+} */
+.numberlikes1 {
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    position: absolute;
+}
+	.namepop {
+    position: relative;
+    left: 126%;
+    top: -47px;
+    font-size: 22px!important;
+    font-weight: bold;
+    color: white;
+}
+	.slidetabpop {
+    margin-top: -22px;
+}
+.closetab:hover {
+    color: black;
+}
+	.closetab {
+    position: relative;
+    left: 33%;
+    font-size: 22px!important;
+    top: -1px;
+    /* transform: rotate(93deg); */
+	cursor:pointer;
+	color:white;
+}
+	.btcomment {
+    color: black;
+    font-size: 20px;
+}
+.commentbt {
+    background-color: white;
+    border: none;
+    color: white;
+    padding: 8px 19px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: -31px 277px;
+    cursor: pointer;
+    border-radius: 48%;
+}
+	.textme {
+    width: 82%;
+    height: 6%!important;
+    border: 1px solid white;
+    background-color: #d21e60;
+}
+	.imageslide {
+    position: relative;
+    top: 11%;
+}
+
+	.commentit {
+    margin-left: -4PX;
+}.popcomment {
+    font-size: 19px !important;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+/*     margin-left: 43px;
+    position: absolute;
+    top: -29px; */
+}
+.popcomment1 {
+    font-size: 19px!important;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+    margin-left: 0px;
+/*     position: absolute;
+    top: -29px; */
+}
+.popcomment1:hover {
+  color: darkblue;
+}
+.popcomment:hover {
+  color: darkblue;
+}
+.textcomment {
+    margin-left: 47px;
+    position: relative;
+}
+
+.imagepopit {
+    height: 19%;
+    width: 11%;
+    /*top: -50px;*/
+    left: -2%;
+    position: relative;
+}
+.commentis {
+     background-color: #ffffff;
+    overflow: auto;
+    border: none;
+    height: 47%;
+    overflow-x: hidden;
+	        border: 1px solid white;
+}
+/* .likebox {
+    margin-top: 14px;
+   
+    /* background-color: #842851; */
+    width: 114%;
+    /* margin-left: -7%; */
+   /* height: 9%;
+    /* position: relative; */
+}
+.imagepopup {
+      height: 13% !important;
+    width: 20%!important;
+    margin-top: 15px!important;
+    /* margin-left: -15px; */
+    position: relative!important;
+    left: -2% !important;
+}
+	* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.imageslider {
+    position: absolute;
+    margin-left: -37%;
+	    margin-top: -6%;
+}
+.popup-content {
+    width: 100% !important;
+    /* height: 100%; */
+}
+a.likeit {
+    margin-top: 10px;
+}
+
+.modelslider {
+    margin-top: 35PX;
+}
+
+.imageslider1 {
+    /* margin-left: 9px; */
+    position: relative;
+    left: -10%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+	.star_rating {
+    position: absolute;
+    left: 95px;
+    top: 18px;
+}
+.donate p {
+ 
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: 34px;
+	 color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+.hovereffect {
+  width: 100%;
+/*   height: 100%; */
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  height:46%!important;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  filter: grayscale(1) blur(3px);
+  -webkit-filter: grayscale(1) blur(3px);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+   /*  border: 1px solid #fff; */
+    /* margin: 50px 0 0 0; */
+    background-color: transparent;
+    margin-top: 68%;
+}
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect a.info, .hovereffect h2 {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hovereffect:hover a.info, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+img.img-responsive {
+    width: 100%;
+    height: 50%;
+}
+.col-md-4.col-sm-4.free_content {
+    border: 1px solid rgba(149, 143, 143, 0.28);
+}
+i.fa.fa-thumbs-o-up {
+    font-size: 25px;
+}
+i.fa.fa-comments{
+	font-size:25px;
+}
+
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.popup-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+	overflow:hidden;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modal-body {padding: 2px 16px;}
+input#fname {
+    background-color: white;
+    border-radius: 27px;
+}
+.mySlides{
+    display: none;
+    width: 100%;
+    height: 399px !important;
+    position: relative;
+    left: 0%;
+    margin-top: -50px;
+} 
+	.rightarrow
+	{
+		    position: absolute;
+    top: 50%;
+    left: -3%;
+    transform: translate(0%,-50%);
+
+	}
+	.leftarrow {
+    position: absolute;
+    top: 50%;
+    left: 92%;
+    transform: translate(0%,-50%);
+}
+	/*--------------modelpage css -------*/
+	
+	.commentit {
+    position: relative;
+    top: -36px;
+    height: 603px;
+}
+.inputme {
+    height: 82%;
+}
+.modelcamera {
+    position: absolute;
+    top: 65%;
+    left: 20%;
+	cursor:pointer;
+}
+.editimagepopup {
+    width: 622px;
+    min-height: 343px;
+    box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 1), 0 15px 44px 0 rgba(0, 0, 0, 1);
+    background-color: #a11835;
+}
+.backgroundindex
+{
+	background-color: rgba(162, 56, 56, 0.4);
+}
+
+
